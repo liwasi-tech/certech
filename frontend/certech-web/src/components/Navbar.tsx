@@ -14,16 +14,24 @@ function Navbar() {
             className="w-full bg-sky-700 text-white fixed left-0 z-[900]"
         >
             <nav
-                className="max-w-[1366px] mx-auto h-[91px] flex justify-between items-center px-7 py-4"
+                className="max-w-[1366px] mx-auto h-24 flex justify-between items-center px-4 py-4"
             >
                 <Link
                     href="/"
                     passHref
+                    className="flex items-center justify-items-center"
                 >
+                    <Image
+                        src="/images/liwasi-menu-logo.png"
+                        width={50}
+                        height={50}
+                        alt="Logo liwasi"
+                        className='py-1'
+                    />
                     <p
-                        className='font-bold text-2xl lg:text-xl lx:text-3xl'
+                        className='font-bold text-lg lg:text-xl lx:text-2xl py-1'
                     >
-                        Liwasi EdTech
+                        EdTech
                     </p>
                 </Link>
                 <ul

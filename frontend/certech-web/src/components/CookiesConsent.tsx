@@ -23,7 +23,7 @@ function CookiesConsent() {
                 <button
                 className="rounded-full bg-sky-700 py-2 px-10 text-white"
                 onClick={() => acceptCookies()}
-                >Accept</button>
+                >Aceptar</button>
             </div>
         </div>
     )
