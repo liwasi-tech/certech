@@ -7,7 +7,6 @@ function FullFeature() {
                 height={512}
                 width={512}
                 alt="Centro de estudio rural"
-                className="w-full"
             />
     )
 }

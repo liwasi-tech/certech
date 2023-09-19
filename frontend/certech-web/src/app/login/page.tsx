@@ -5,14 +5,14 @@ export const metadata: Metadata = {
   description: 'Página de inicio de sesión a Liwasi EdTech',
 }
 
-function About() {
+function Login() {
   return (
     <main
-    className="py-16"
+    className="pt-16"
     >
-      Login
+        Login
     </main>
-  )
+)
 }
 
-export default About
+export default Login

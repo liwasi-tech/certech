@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="w-full px-4 md:px-0 pt-16 flex relative">
-      <FullFeature />
+    <main className="w-full px-4 md:px-0 pt-16 flex">
+      <p><strong>Liwasi EdTech</strong> - Centro educativo rural para la educación en tecnología.</p>
     </main>
   )
 }

@@ -1,12 +1,12 @@
 interface GeneralButtonProps {
-    className: string;
+    className?: string;
     text: string;
     onClick?: () => void;
   }
 function GeneralButton({className, text, onClick}: GeneralButtonProps) {
     return (
         <button
-            className={`${className} bg-white text-sky-700 px-2 py-1 rounded-full hover:shadow-lg`}
+            className={`${className} bg-sky-900 text-white px-2 py-1 rounded-xl hover:shadow-lg font-normal`}
             onClick={onClick}
         >
             {text}

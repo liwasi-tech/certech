@@ -1,10 +1,11 @@
+import GeneralButton from "@/components/GeneralButton"
 import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 
 export const metadata: Metadata = {
   title: 'Error 404 | Liwasi Tech',
-  description: 'Error 4040. Página no encontrada',
+  description: 'Error 404. Página no encontrada',
 }
 
 function NotFound() {
@@ -38,11 +39,9 @@ function NotFound() {
           <Link
             href="/"
           >
-            <button
-              className="rounded-full text-sky-700 mx-auto bg-white text-center mt-1 px-2"
-            >
-              Ir al inicio
-            </button>
+            <GeneralButton
+              text="Ir al inicio"
+            />
           </Link>
         </div>
       </div>
