@@ -1,6 +1,51 @@
+import GeneralButton from "@/components/GeneralButton"
+import { Metadata } from "next"
+import Image from "next/image"
+import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: 'Error 404 | Liwasi Tech',
+  description: 'Error 404. Página no encontrada',
+}
+
 function NotFound() {
   return (
-    <h1>404 Not found</h1>
+    <main
+      className="w-full h-screen bg-sky-700 inline-block"
+    >
+      <div
+        className="mt-24 justify-center w-full items-center"
+      >
+        <Image
+          src="/images/liwasi-menu-logo.png"
+          alt="Logo Liwasi Tech"
+          height={180}
+          width={180}
+          className="mx-auto"
+        />
+        <p
+          className="text-white text-[90px] md:text-[110px] text-center"
+        >
+          404
+        </p>
+        <p
+          className="w-full px-7 text-center text-white font-light"
+        >
+          No hemos encontrado la página que buscas. Fíjate si la URL está bien escrita. En caso contrario, te recomendamos volver a la página principal.
+        </p>
+        <div
+          className="text-center"
+        >
+          <Link
+            href="/"
+          >
+            <GeneralButton
+              text="Ir al inicio"
+            />
+          </Link>
+        </div>
+      </div>
+    </main>
   )
 }
 

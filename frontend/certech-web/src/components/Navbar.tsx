@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import GeneralButton from './GeneralButton'
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -14,45 +15,76 @@ function Navbar() {
             className="w-full bg-sky-700 text-white fixed left-0 z-[900]"
         >
             <nav
-                className="max-w-[1366px] mx-auto h-[91px] flex justify-between items-center px-7 py-4"
+                className="max-w-[1366px] mx-auto h-16 flex justify-between items-center px-4"
             >
+                <div
+                    className="flex"
+                >
+                    <Link
+                        href="/"
+                        className="flex"
+                    >
+                        <Image
+                            src="/images/liwasi-menu-logo.png"
+                            alt="Logo de Liwasi Tech"
+                            width={48}
+                            height={48}
+                        />
+                        <p
+                            className="flex items-center ml-1 font-light text-lg md:text-xl"
+                        >
+                            EdTech
+                        </p>
+                    </Link>
+                    <ul
+                        className="hidden md:flex justify-around items-center ml-4 px-4 font-normal text-sky-200"
+                    >
+                        <li
+                            className='hover:text-white px-1'
+                        >
+                            <Link
+                                href="/"
+                            >
+                                Inicio
+                            </Link>
+                        </li>
+                        <li
+                            className='hover:text-white  px-1'
+                        >
+                            <Link
+                                href="/about"
+                            >
+                                Quienes somos
+                            </Link>
+                        </li>
+                        <li
+                            className='hover:text-white px-1'
+                        >
+                            <Link
+                                href="/signup"
+                            >
+                                Regístrate
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
                 <Link
-                    href="/"
-                    passHref
+                    href="/login"
                 >
-                    <p
-                        className='font-bold text-2xl lg:text-xl lx:text-3xl'
-                    >
-                        Liwasi EdTech
-                    </p>
+                    <GeneralButton
+                        className="hidden md:block"
+                        text="Inicia sesión"
+                    />
                 </Link>
-                <ul
-                    className="hidden md:flex uppercase font-semibold text-[14px] xl:[16px]"
-                >
-                    <li
-                        className="mr-4 hover:text-white"
-                    >
-                        <Link href="/">Inicio</Link>
-                    </li>
-                    <li
-                        className="mr-4 hover:text-white"
-                    >
-                        <Link href="/signup">Regístrate</Link>
-                    </li>
-                    <li
-                        className="mr-4 hover:text-white"
-                    >
-                        <Link href="/about">Quienes somos</Link>
-                    </li>
-                </ul>
+                {/* Menu open close icons */}
                 <div
                     className="block md:hidden z-[10] text-white"
                     onClick={handleMenu}
                 >
                     {menuOpen ?
-                        <AiOutlineClose size={30} />
+                        <AiOutlineClose size={20} />
                         :
-                        <AiOutlineMenu size={30} />
+                        <AiOutlineMenu size={20} />
                     }
                 </div>
                 <div
@@ -67,7 +99,7 @@ function Navbar() {
                         className="w-full text-blue-500 text-xl"
                     >
                         <div
-                            className="w-full mb-5 pb-5 flex justify-center items-center mx-auto"
+                            className="w-full mb-5 pb-2 flex justify-center items-center mx-auto"
                         >
                             <Link
                                 href="/"
@@ -77,28 +109,28 @@ function Navbar() {
                                 <Image
                                     src="/images/liwasi-menu-logo.png"
                                     alt="Logo liwasi"
-                                    width={200}
-                                    height={200}
+                                    width={150}
+                                    height={150}
                                 />
                             </Link>
                         </div>
                         <ul
-                            className="px-4 uppercase font-semibold cursor-pointer text-white"
+                            className="px-4 font-normal cursor-pointer text-white"
                         >
                             <li
-                                className="py-4 hover:text-sky-50"
+                                className="py-3"
                                 onClick={handleMenu}
                             >
-                                <Link href="/">Inicio</Link>
+                                <Link href="/login">Inicia sesión</Link>
                             </li>
                             <li
-                                className="py-4 hover:text-sky-50"
+                                className="py-3"
                                 onClick={handleMenu}
                             >
                                 <Link href="/signup">Regístrate</Link>
                             </li>
                             <li
-                                className="py-4 hover:text-sky-50"
+                                className="py-3"
                                 onClick={handleMenu}
                             >
                                 <Link href="/about">Quienes somos</Link>
