@@ -30,21 +30,34 @@ function About() {
         <h3
           className="px-4 pb-4 flex justify-start font-light text-sky-700 mt-4"
         >Conoce a nuestro equipo</h3>
-        <div className="inline flex w-full px-4 justify-center">
+        <div className="flex flex-wrap justify-center w-full px-4">
           <TeamProfile
             name="Briggitte Castañeda"
+            rol="Founder"
+            socialUrls={[
+              "https://www.linkedin.com/in/ladybataca/",
+              "https://github.com/ladyBataca",
+              "https://www.instagram.com/ladybataca/"
+
+            ]}
             description="Ingeniera Electrónica 👩🏾‍💻⚙️
             Cree en el poder de las pequeñas acciones para crecer en comunidad ✨"
             urlImage="https://avatars.githubusercontent.com/u/83377786?v=4"
             location="Maní, Casanare 🇨🇴"
-            className="me-2"
+            className="m-2"
           />
           <TeamProfile
             name="Braejan Arias"
+            rol="Founder"
+            socialUrls={[
+              "https://linkedin.com/in/braejan",
+              "https://github.com/braejan",
+            ]}
             description="Ingeniero de Software - 
             La democracia es hasta el momento; el mejor invento de nuestra especie para vivir en comunidad ✨"
             urlImage="https://avatars.githubusercontent.com/u/10325051?v=4"
             location="Bogotá, Bogotá D.C. 🇨🇴"
+            className="m-2"
           />
         </div>
       </div>

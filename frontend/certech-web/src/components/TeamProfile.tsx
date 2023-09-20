@@ -1,10 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
 
 interface TeamProfileProps {
     name: string;
     description: string;
+    rol: string;
     urlImage: string;
     location: string;
+    socialUrls: string[];
     className?: string;
 }
 
@@ -13,13 +17,13 @@ function TeamProfile(props: TeamProfileProps) {
         <div
             className={`
             ${props.className ? props.className : ""}
-            max-w-xs bg-sky-700 w-full rounded-md shadow-md shadow-gray-600
+            max-w-xs bg-sky-700 rounded-md shadow-md shadow-gray-600
             `}
         >
             <p
                 className="p-1 bg-amber-500 absolute text-[9px] mt-2 ms-1 font-semibold rounded-md uppercase"
             >
-                Co-Founder
+                {props.rol}
 
             </p>
             <div className="w-full justify-center flex pt-2">
@@ -50,6 +54,20 @@ function TeamProfile(props: TeamProfileProps) {
                 <span
                     className="w-full p-[0.25px] bg-white mx-6"
                 />
+            </div>
+            <div
+                className="w-full flex flex-wrap items-center p-4 justify-center"
+            >
+                {
+                    props.socialUrls.map((url) => (
+                        <SocialIcon
+                            url={url}
+                            target="_blank"
+                            style={{ height: 25, width: 25 }}
+                            className="mx-1"
+                        />
+                    ))
+                }
             </div>
         </div>
     )
