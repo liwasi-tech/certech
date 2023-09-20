@@ -59,8 +59,9 @@ function TeamProfile(props: TeamProfileProps) {
                 className="w-full flex flex-wrap items-center p-4 justify-center"
             >
                 {
-                    props.socialUrls.map((url) => (
+                    props.socialUrls.map((url, index) => (
                         <SocialIcon
+                            key={index}
                             url={url}
                             target="_blank"
                             style={{ height: 25, width: 25 }}
