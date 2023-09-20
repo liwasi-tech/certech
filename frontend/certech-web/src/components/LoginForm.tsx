@@ -8,13 +8,13 @@ function LoginForm() {
     }
     return (
         <div
-            className="w-full py-8 z-10 flex items-center justify-center"
+            className="w-full h-screen z-10 flex items-center justify-center"
         >
             <div
-                className="w-full  px-4 shadow-md rounded-md shadow-gray-400 max-w-xs"
+                className="w-full shadow-md rounded-md shadow-gray-400 max-w-xs"
             >
                 <form onSubmit={handleSubmit}
-                    className="w-full px-4 py-2  mt-1 "
+                    className="w-full px-4  mt-1 "
                 >
                     <p
                         className="w-full font-light text-sky-700 text-4xl"
@@ -27,7 +27,7 @@ function LoginForm() {
                         className="w-full border-[1.5px] border-sky-700 text-sky-700 bg-white font-normal px-2 py-1 mt-2 rounded-md" />
                     <input
                         type="password"
-                        placeholder="Ingresa tu correo contraseña"
+                        placeholder="Ingresa tu contraseña"
                         className="w-full border-[1.5px] border-sky-700 text-sky-700 bg-white font-normal px-2 py-1 mt-2 rounded-md" />
                     <div className="w-full flex items-end justify-end pt-2">
                         <GeneralButton
