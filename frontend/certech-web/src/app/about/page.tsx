@@ -12,7 +12,7 @@ function About() {
       className="pt-16 w-full flex items-center justify-center"
     >
       <div
-        className="w-full max-w-3xl"
+        className="w-full max-w-4xl"
       >
         <h1
           className="flex justify-center font-thin text-[40px] md:text-[60px] text-sky-700"
@@ -28,12 +28,12 @@ function About() {
           </p>
         </div>
         <h3
-          className="px-4 pb-4 flex justify-start font-light text-sky-700 mt-4"
+          className="px-4 pb-4 flex justify-start font-medium text-sky-700 mt-4"
         >Conoce a nuestro equipo</h3>
         <div className="flex flex-wrap justify-center w-full px-4">
           <TeamProfile
             name="Briggitte Castañeda"
-            rol="Founder"
+            rol="Co-Founder"
             socialUrls={[
               "https://www.linkedin.com/in/ladybataca/",
               "https://github.com/ladyBataca",
@@ -48,7 +48,7 @@ function About() {
           />
           <TeamProfile
             name="Braejan Arias"
-            rol="Founder"
+            rol="Co-Founder"
             socialUrls={[
               "https://linkedin.com/in/braejan",
               "https://github.com/braejan",

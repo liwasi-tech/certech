@@ -26,7 +26,6 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Navbar />
         {children}
-        <CookiesConsent />
         <Footer />
       </body>
     </html>
