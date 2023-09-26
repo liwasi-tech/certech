@@ -78,7 +78,7 @@ function Navbar() {
                 </Link>
                 {/* Menu open close icons */}
                 <div
-                    className="block md:hidden z-[10] text-white"
+                    className="block md:hidden z-[10] p-2 text-white hover:text-sky-700 hover:rounded-full hover:bg-white hover:p-2"
                     onClick={handleMenu}
                 >
                     {menuOpen ?

@@ -1,3 +1,4 @@
+import LoginForm from "@/components/LoginForm"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -6,13 +7,15 @@ export const metadata: Metadata = {
 }
 
 function Login() {
+
   return (
     <main
-    className="pt-16"
+      className=""
     >
-        Login
+      <LoginForm />
+
     </main>
-)
+  )
 }
 
 export default Login
